@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../../utils/css/cores.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <div id="menuColaborador"></div>
+    <div class="container">
+        <div class="titulo">
+            <div class="icone">
+                <img src="img/carrinho.png" alt="Carrinho">
+            </div>
+            Carrinho de Compras
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th><img src="img/produto.png" alt="produtos"> Produto <img id="btOrdenar" data-valor="nome" class="sort-asc" src="img/sort.png" alt="sort"></th>
+              <th width="100px">Qtd</th>
+              <th width="100px">Valor <img id="btOrdenar" data-valor="valor" class="sort-asc" src="img/sort.png" alt="sort"></th>
+              <th width="80px">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="itensGrid">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="total">
+        <h4>Total de Digicoins: <span id="valorTotal">0</span></h4>
+        <button id="botaoFinalizarPedido" class="checkout-button" onclick="finalizarPedido()">Finalizar Pedido</button>
+      </div>
+      <script type="module" src="carrinho.js"></script>
+      <script src="../../utils/js/menu_colaborador.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --laranja: #FC671D;
+    --magenta: #D34AF4;
+    --cinza: #faf6f7;
+    --cinza-escuro: #888;
+    --ciano: #0BC0D3;
+    --base: #2c006a;
+    --branco: #fff;
+    --preto: #000;
+    --sombra-base: rgba(44, 0, 106, 0.4);
+    --sombra-preta: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+    border: black solid 2px;
+    border-radius: 20px;
+}
+
+.searchBar {
+    border-radius: 30px;
+    width: 400px;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* .busca {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+} */
+
+#lupa {
+    width: 40px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: var(--laranja);
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.produtos {
+    margin: 0 auto;
+    padding-top: 70px;
+
+}
+
+.produtosDigix {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 40px;
+    height: 0;
+    top: 273px;
+    left: 375px;
+    border: 2px var(--laranja) solid;
+}
+
+.imagensDigix {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 60px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.imagensCampanha {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(1, 250px);
+    gap: 60px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.produtosEmGeral {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(1, 250px);
+    gap: 60px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.imgD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px var(--preto);
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.imgD button {
+    border: none;
+    background: var(--branco);
+}
+
+
+.imgD:hover {
+    scale: 1.2;
+}
+
+.produtos .imagensP {
+    width: 130px;
+    height: auto;
+}
+
+dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#cardProdutos {
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+#cardProdutos .NProduto {
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+#cardProdutos .imagemCard {
+    display: flex;
+    justify-content: center;
+}
+
+#cardProdutos .ImProduto {
+    width: 230px;
+    height: 230px;
+    padding: 50px 0 50px 0;
+}
+
+#cardProdutos .preco {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 5px 0 10px;
+}
+
+#cardProdutos .preco p {
+    font-weight: bold;
+    padding-right: 10px;
+    color: var(--laranja);
+}
+
+#cardProdutos .preco span {
+    font-weight: bold;
+    color: var(--ciano);
+}
+
+#cardProdutos .topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 0;
+}
+
+.topo .X {
+    border: none;
+    background: var(--branco);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.topo .X img {
+    width: 30px;
+    height: auto;
+}
+
+.Adquirir {
+    background-color: var(--magenta);
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+    margin: 18px auto;
+    border: none;
+    border-radius: 25px;
+    width: 70%;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.Adquirir:hover {
+    background-color: rgb(201, 1, 201);
+}
